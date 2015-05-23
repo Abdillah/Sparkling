@@ -35,6 +35,17 @@ function sparkling_main_content_bootstrap_classes() {
 }
 endif; // sparkling_main_content_bootstrap_classes
 
+if ( ! function_exists( 'sparkling_inner_post_classes' ) ) :
+/**
+ * Add embed-mode classes to the post-inner-content wrapper.
+ */
+function sparkling_inner_post_classes() {
+  if ( is_page_template( 'page-fullwidth-embedable.php' ) ) {
+    return 'post-inner-content-embeded';
+  }
+}
+endif;
+
 if ( ! function_exists( 'sparkling_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

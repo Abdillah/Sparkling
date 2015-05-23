@@ -8,7 +8,7 @@
 
 <?php the_post_thumbnail( 'sparkling-featured', array( 'class' => 'single-featured' )); ?>
 
-<div class="post-inner-content">
+<div class="post-inner-content <?php echo sparkling_inner_post_classes(); ?>">
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header page-header">
 		<h1 class="entry-title"><?php the_title(); ?></h1>
